@@ -22,7 +22,7 @@ h2 {
     .columns > div > div {
         flex: 1;
         margin-left: 32px;
-        color:#FF0000;
+        color:#000000;
     }
 
     .columns > div > div:first-of-type {
