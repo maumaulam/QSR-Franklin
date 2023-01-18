@@ -7,6 +7,11 @@
     width: 100%;
 }
 
+h2 {
+    font-size: var(--heading-font-size-xl);
+    color: #008000;
+}
+
 @media (min-width: 900px) {
     .columns > div {
         display: flex;
