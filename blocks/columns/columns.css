@@ -17,7 +17,7 @@
     .columns > div > div {
         flex: 1;
         margin-left: 32px;
-        --text-color:red;
+        color:#FF0000;
     }
 
     .columns > div > div:first-of-type {
