@@ -190,7 +190,4 @@ export default async function decorate(block) {
     form.replaceWith(await createForm(form.href));
   }
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
+
