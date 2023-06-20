@@ -1,0 +1,48 @@
+#container {
+  position: relative;
+  background: transparent;
+}
+
+#container2 {
+  position: relative;
+  left: 50px;
+  background: transparent;
+}
+
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: transparent;
+  font-size: 50px;
+}
+
+#animatemirror {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+#animate2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: transparent;
+  font-size: 50px;
+}
+
+#animatemirror2 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+#floatemojitext {
+  margin-left: 25px;
+  margin-top: 25px;
+  font-weight: bold;
+}
