@@ -26,7 +26,7 @@ function myMove() {
       hposmirror = pos + 75 * Math.sin(radians);
       elemmirror.style.top = `-${pos}px`;
       elemmirror.style.left = `${hposmirror}px`;
-      if (vpos >= h * 0.7) {
+      if (vpos >= h * 0.6) {
         elem.style.opacity = fade;
         elemmirror.style.opacity = fade;
         fade -= 0.004;
@@ -72,7 +72,7 @@ function myMove2() {
       hposmirror = pos + 50 * Math.sin(radians);
       elemmirror.style.top = `-${vposmirror}px`;
       elemmirror.style.left = `${hposmirror}px`;
-      if (vpos >= h * 0.7) {
+      if (vpos >= h * 0.6) {
         elem.style.opacity = fade;
         elemmirror.style.opacity = fade;
         fade -= 0.004;
