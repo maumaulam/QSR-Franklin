@@ -8,7 +8,7 @@ sampleRUM('cwv');
 
 function jQueryIsReady() {
   // eslint-disable-next-line no-undef
-  $('.default-content-wrapper.p').ripples({
+  $('.default-content-wrapper').ripples({
     resolution: 1024,
     dropRadius: 40,
     perturbance: 0.09,
