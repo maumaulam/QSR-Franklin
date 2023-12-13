@@ -10,7 +10,7 @@ function jQueryIsReady() {
   // eslint-disable-next-line no-undef
   $('body').ripples({
     resolution: 1024,
-    dropRadius: 40,
+    dropRadius: 20,
     perturbance: 0.04,
   });
 }
