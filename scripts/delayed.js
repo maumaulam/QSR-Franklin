@@ -11,7 +11,7 @@ function jQueryIsReady() {
   $('body').ripples({
     resolution: 1024,
     dropRadius: 20,
-    perturbance: 0.04,
+    perturbance: 0.1,
   });
 }
 
