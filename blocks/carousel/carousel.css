@@ -29,6 +29,7 @@
   justify-content: center;
   position: relative;
   width: 100%;
+  header-height: 0vw;
   min-height: min(50vw, calc(100dvh - var(--header-height)));
 }
 
