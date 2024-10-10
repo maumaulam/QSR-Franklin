@@ -121,6 +121,11 @@ async function loadPage() {
   loadDelayed();
 }
 
+
+/**
+ * Decorates external links to open in new tab.
+ * @param {Element} main The container element
+ */
 export function decorateExternalLinks(main) {
   // eslint-disable-next-line no-use-before-define
   const hosts = [window.location.hostname, ...PRODUCTION_DOMAINS];
