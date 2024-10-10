@@ -134,7 +134,7 @@ export function decorateExternalLinks(main) {
       const extension = href.split('.').pop().trim();
       if (!href.startsWith('/')
         && !href.startsWith('#')) {
-        if (!href.includes('qsr-franklin') || (extension === 'pdf')) {
+        if (!href.includes('qsr-franklin.com') || (extension === 'pdf')) {
           a.setAttribute('target', '_blank');
         }
       }
