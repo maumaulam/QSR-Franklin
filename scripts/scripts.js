@@ -121,4 +121,22 @@ async function loadPage() {
   loadDelayed();
 }
 
+export function decorateExternalLinks(main) {
+  // eslint-disable-next-line no-use-before-define
+  const hosts = [window.location.hostname, ...PRODUCTION_DOMAINS];
+  main.querySelectorAll('a').forEach((a) => {
+    if (a.href) {
+      try {
+        const url = new URL(a.href);
+        const external = !hosts.some((host) => url.hostname.includes(host));
+        if (external) {
+          a.setAttribute('target', '_blank');
+        }
+      } catch (e) {
+        // ignore invalid URLs
+      }
+    }
+  });
+}
+
 loadPage();
