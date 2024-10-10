@@ -128,18 +128,23 @@ async function loadPage() {
  * @param {Element} main The container element
  */
 export function decorateExternalLinks(main) {
+  // eslint-disable-next-line no-use-before-define
+  const hosts = [window.location.hostname, ...PRODUCTION_DOMAINS];
   main.querySelectorAll('a').forEach((a) => {
-    const href = a.getAttribute('href');
-    if (href) {
-      const extension = href.split('.').pop().trim();
-      if (!href.startsWith('/')
-        && !href.startsWith('#')) {
-        if (!href.includes('merative.com') || (extension === 'pdf')) {
+    if (a.href) {
+      try {
+        const url = new URL(a.href);
+        const external = !hosts.some((host) => url.hostname.includes(host));
+        if (external) {
           a.setAttribute('target', '_blank');
         }
+      } catch (e) {
+        // ignore invalid URLs
       }
     }
   });
 }
+
+const PRODUCTION_DOMAINS = ['main--qsr-franklin--maumaulam.hlx.live'];
 
 loadPage();
