@@ -47,8 +47,8 @@ function buildAutoBlocks(main) {
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
-  decorateButtons(main);
   decorateExternalLinks(main);
+  decorateButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
@@ -134,7 +134,7 @@ export function decorateExternalLinks(main) {
       const extension = href.split('.').pop().trim();
       if (!href.startsWith('/')
         && !href.startsWith('#')) {
-        if (!href.includes('qsr-franklin.com') || (extension === 'pdf')) {
+        if (!href.includes('qsr-franklin') || (extension === 'pdf')) {
           a.setAttribute('target', '_blank');
         }
       }
