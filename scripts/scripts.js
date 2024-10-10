@@ -145,6 +145,6 @@ export function decorateExternalLinks(main) {
   });
 }
 
-const PRODUCTION_DOMAINS = ['main--qsr-franklin--maumaulam.hlx.live'];
+const PRODUCTION_DOMAINS = ['qsr-franklin'];
 
 loadPage();
