@@ -136,6 +136,7 @@ export function decorateExternalLinks(main) {
         && !href.startsWith('#')) {
         if (!href.includes('qsr-franklin') || (extension === 'pdf')) {
           a.setAttribute('target', '_blank');
+          console.log('if statement met');
         }
       }
     }
